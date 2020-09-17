@@ -1,0 +1,164 @@
+$font-size-root: 22px;
+$sheet-border-radius: 4px;
+$list-item-title-font-size: 0.929rem;
+$list-item-dense-title-font-size: 0.929rem;
+$list-item-dense-title-font-weight: initial;
+$fab-icon-sizes: (small: 20);
+$btn-font-sizes: (default: 1rem, large: 1rem);
+$btn-sizes: (default: 41, large: 54);
+$btn-letter-spacing: 0;
+$btn-font-weight: 400;
+// $card-text-font-size: 16px;
+$body-font-family: 'TH Sarabun New';
+$list-nav-rounded-item-margin-bottom: 0px;
+$list-item-content-children-margin-bottom: 0px;
+$list-item-content-padding: 8px;
+// $tabs-item-min-width: 200px;
+$date-picker-table-font-size: 18px;
+$messages-font-size: 18px;
+
+$card-text-letter-spacing: initial;
+$card-title-letter-spacing: initial;
+$dialog-card-title-letter-spacin: initial;
+$card-text-letter-spacing: initial;
+$card-title-letter-spacing: initial;
+$badge-letter-spacing: initial;
+$dialog-card-title-letter-spacing: initial;
+$input-letter-spacing: initial;
+$tabs-item-letter-spacing: initial;
+$btn-letter-spacing: initial;
+
+$select-selections-margin: 0px;
+$select-selections-line-height: initial;
+$select-selections-height: initial;
+
+$calendar-weekly-weekday-font-size: 20px;
+$calendar-event-font-size: 16px;
+$calendar-weekly-day-label-font-size: 22px;
+
+* {
+  letter-spacing: 0em !important;
+}
+
+[class^="display"] {
+  letter-spacing: 0em !important;
+}
+
+$headings: ('h1': ('letter-spacing': 0,
+    'size': 3.3125rem,
+    'line-height': 1.15em),
+  'h2': ('letter-spacing': 0,
+    'size': 2.25rem,
+    'line-height': 1.5em),
+  'h3': ('letter-spacing': normal,
+    'size': 1.5625rem,
+    'line-height': 1.4em),
+  'h4': ('letter-spacing': 0,
+    'size': 1.125rem,
+    'line-height': 1.4em),
+  'h5': ('letter-spacing': 0,
+    'size': 1.0625rem),
+  'h6': ('letter-spacing': 0,
+    'size': .75rem),
+  'subtitle-1': ('letter-spacing': 0,
+    'size': 1rem),
+  'subtitle-2': ('letter-spacing': 0,
+    'size': 1rem),
+  'body-2': ('letter-spacing': 0),
+  'body-1': ('letter-spacing': 0),
+  'caption': ('letter-spacing': 0),
+  'overline': ('letter-spacing': 0));
+
+.v-application {
+
+  code,
+  kbd {
+
+    &:after,
+    &:before {
+      letter-spacing: 0
+    }
+  }
+}
+
+.support {
+  letter-spacing: initial !important
+}
+
+.v-application {
+
+  code,
+  kbd {
+
+    &:after,
+    &:before {
+      letter-spacing: 0
+    }
+  }
+}
+
+.required label::after {
+  content: "*";
+  color: red !important;
+}
+
+.required::after {
+  content: " *";
+  color: red !important;
+}
+
+.v-btn.v-btn--contained:before {
+  opacity: 0.18;
+}
+
+.v-select__selections {
+  min-width: 20px;
+}
+
+.v-color-picker__controls {
+  display: none;
+}
+
+html,
+.v-application.theme--light {
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #e6e6e6;
+    border-left: 1px solid #dadada;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border: solid 2px #e6e6e6;
+    border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8A9399;
+  }
+}
+
+html.dark,
+.v-application.theme--dark {
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #202020;
+    border-left: 1px solid #2c2c2c;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #3e3e3e;
+    border: solid 2px #202020;
+    border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: black;
+  }
+}
